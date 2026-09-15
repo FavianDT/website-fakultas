@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Font Awesome CDN untuk Ikon -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleform.css">
 
 </head>
 <body>
@@ -31,9 +32,131 @@
 
     <!-- TEMPAT UNTUK ANGGOTA TIM LAIN -->
     <main class="main-content">
-        <!-- ISIKAN KONTEN UTAMA DI SINI -->
-        <h2>[ Area Konten Utama ]</h2>
-        <p>Bagian ini siap diisi oleh pengembang lain.</p>
+        <div class="form-wrapper">
+
+            <div class="title">
+                Permohonan Keterangan Aktif FTP Uninus
+            </div>
+
+            <div class="form">
+
+                <!-- NAMA -->
+                <div class="form-card">
+                    <label>Nama Mahasiswa</label>
+
+                    <input 
+                        type="text"
+                        placeholder="Ketik Nama Lengkap">
+                </div>
+
+                <!-- NIM -->
+                <div class="form-card">
+                    <label>Nomor Induk Mahasiswa</label>
+
+                    <input
+                        type="text"
+                        placeholder="Ketik NIM"> 
+                </div>
+
+                <!-- PRODI -->
+                <div class="form-card">
+                    <label>Program Studi</label>
+
+                    <select>
+                        <option value="">
+                            Pilih Prodi
+                        </option>
+                        <option>
+                            Agroteknologi
+                        </option>
+                        <option>
+                            Teknik Elektro 
+                        </option>
+                        <option>
+                            Teknik Industri
+                        </option>
+                        <option>
+                            Teknik Informatika
+                        </option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER -->
+                <div class="form-card">
+                    <label>Semester</label>
+
+                    <select>
+                        <option value="">
+                            Pilih Semester
+                        </option>
+                        <option>
+                            Semester 1
+                        </option>
+                        <option>
+                            Semester 2
+                        </option>
+                        <option>
+                            Semester 3
+                        </option>
+                        <option>
+                            Semester 4
+                        </option>
+                        <option>
+                            Semester 5
+                        </option>
+                        <option>
+                            Semester 6
+                        </option>
+                        <option>
+                            Semester 7
+                        </option>
+                        <option>
+                            Semester 8
+                        </option>
+                    </select>
+                </div>
+
+                <!-- TTL -->
+                <div class="form-card">
+                    <label>Tempat, Tanggal Lahir</label>
+
+                    <input 
+                        type="text"
+                        placeholder="Contoh: Tangerang, 4 Maret 2001">
+                </div>
+
+                <!-- ALAMAT -->
+                <div class="form-card">
+                    <label>Alamat Lengkap</label>
+
+                    <input
+                        type="text"
+                        placeholder="Ketik Alamat">
+                </div>
+
+                <!-- NOMOR HP -->
+                <div class="form-card">
+                    <label>Nomor HP</label>
+
+                    <input
+                        type="text"
+                        placeholder="Ketik Nomor HP">
+                </div>
+
+                <!-- KEPERLUAN SURAT -->
+                <div class="form-card">
+                    <label>Keperluan SUrat</label>
+
+                    <input
+                        type="text"
+                        placeholder="Contoh: Untuk magang PMMB BUMN batch 1 2021, Diminta kantor orang tua, dll">
+                </div>
+            </div>
+        </div>
+
+        <div class="submit">
+            <button class="btn btn-primary" type="submit">SUBMIT FORM</button>
+        </div>
     </main>
 
 
