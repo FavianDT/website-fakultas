@@ -1,0 +1,147 @@
+    /* Reset & Konfigurasi Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    background-color: #2b783c; /* Warna Hijau Utama */
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    height: 40px; /* Sesuaikan ukuran logo */
+    display: block;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-icon {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Toggle Switch Sederhana */
+.theme-toggle {
+    width: 70px;
+    height: 28px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.toggle-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+
+/* ---------------- KONTEN UTAMA (TEMPAT UNTUK DEVS LAIN) ---------------- */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+    color: #666;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    background-color: #2b783c; /* Warna Hijau Utama */
+    color: white;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.brand-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.info-item i {
+font-size: 1.1rem;
+width: 20px;
+text-align: center;
+margin-top: 2px;
+}
+
+.info-item a {
+color: white;
+text-decoration: none;
+}
+
+.info-item a:hover {
+text-decoration: underline;
+}
