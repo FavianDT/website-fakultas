@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daftar - Sistem Informasi</title>
+
+    <link rel="stylesheet" href="styleregister.css">
+</head>
+
+<body>
+    <main class="register-page">
+        <div class="register-background"></div>
+        <section class="register-container">
+            <div class="register-card">
+
+                <!-- Bagian Informasi -->
+                <div class="register-info">
+                    <div class="info-content">
+                        <a href="login.html" class="back-login">
+                            ← Kembali ke Login
+                        </a>
+                        <div class="info-logo">
+                            <img src="logo.png" alt="Logo">
+                        </div>
+                        <h1>Mulai Bersama Kami</h1>
+                        <p>
+                            Buat akun baru untuk mendapatkan akses
+                            ke berbagai layanan yang tersedia.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-icon">✓</span>
+                                <span>Akses layanan dengan mudah</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">✓</span>
+                                <span>Data akun tersimpan dengan aman</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">✓</span>
+                                <span>Gunakan kapan saja dan di mana saja</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bagian Form -->
+                <div class="register-form-section">
+                    <div class="register-form-header">
+                        <span class="form-badge">
+                            REGISTRASI
+                        </span>
+                        <h2>Buat Akun Baru</h2>
+                        <p>
+                            Lengkapi data berikut untuk membuat akun.
+                        </p>
+                    </div>
+
+
+                    <form id="registerForm" class="register-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    Nama Depan
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="Nama depan"
+                                    autocomplete="given-name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">
+                                    Nama Belakang
+                                </label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Nama belakang"
+                                    autocomplete="family-name"
+                                >
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="username">
+                                Username
+                            </label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Buat username"
+                                autocomplete="username"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nama@email.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <div class="password-input">
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Buat password"
+                                    autocomplete="new-password"
+                                    minlength="8"
+                                    required
+                                >
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="passwordToggle"
+                                    aria-label="Tampilkan password"
+                                >
+                                    👁
+                                </button>
+                            </div>
+
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <span id="strengthProgress"></span>
+                                </div>
+
+                                <span id="strengthText">
+                                    Minimal 8 karakter
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="confirmPassword">
+                                Konfirmasi Password
+                            </label>
+
+                            <div class="password-input">
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Ulangi password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="confirmPasswordToggle"
+                                    aria-label="Tampilkan password"
+                                >
+                                    👁
+                                </button>
+                            </div>
+
+                            <small
+                                class="password-match"
+                                id="passwordMatch"
+                            ></small>
+
+                        </div>
+
+                        <div class="terms">
+                            <label class="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    required
+                                >
+
+                                <span class="custom-checkbox"></span>
+                                <span class="terms-text">
+                                    Saya menyetujui
+                                    <a href="#">
+                                        syarat dan ketentuan
+                                    </a>
+                                    yang berlaku.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn-register-submit"
+                        >
+                            Daftar Sekarang
+                        </button>
+
+                    </form>
+
+                    <div class="login-link">
+                        <span>Sudah memiliki akun?</span>
+                        <a href="login.html">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const registerForm =
+            document.getElementById("registerForm");
+        const passwordInput =
+            document.getElementById("password");
+        const confirmPasswordInput =
+            document.getElementById("confirmPassword");
+        const passwordToggle =
+            document.getElementById("passwordToggle");
+        const confirmPasswordToggle =
+            document.getElementById("confirmPasswordToggle");
+        const strengthProgress =
+            document.getElementById("strengthProgress");
+        const strengthText =
+            document.getElementById("strengthText");
+        const passwordMatch =
+            document.getElementById("passwordMatch");
+
+        function togglePassword(input, button) {
+            if (input.type === "password") {
+                input.type = "text";
+                button.classList.add("active");
+
+            } else {
+                input.type = "password";
+                button.classList.remove("active");
+            }
+
+        }
+
+        passwordToggle.addEventListener(
+            "click",
+            function () {
+                togglePassword(
+                    passwordInput,
+                    passwordToggle
+                );
+            }
+        );
+
+        confirmPasswordToggle.addEventListener(
+            "click",
+            function () {
+                togglePassword(
+                    confirmPasswordInput,
+                    confirmPasswordToggle
+                );
+            }
+        );
+
+
+        passwordInput.addEventListener(
+            "input",
+            function () {
+                const password =
+                    passwordInput.value;
+                let strength = 0;
+
+                if (password.length >= 8) {
+                    strength++;
+                }
+                if (/[A-Z]/.test(password)) {
+                    strength++;
+                }
+                if (/[0-9]/.test(password)) {
+                    strength++;
+                }
+                if (/[^A-Za-z0-9]/.test(password)) {
+                    strength++;
+                }
+
+                strengthProgress.style.width =
+                    (strength * 25) + "%";
+
+                if (password.length === 0) {
+                    strengthText.textContent =
+                        "Minimal 8 karakter";
+                } else if (strength === 1) {
+                    strengthText.textContent =
+                        "Password lemah";
+                } else if (strength === 2) {
+                    strengthText.textContent =
+                        "Password cukup";
+                } else if (strength === 3) {
+                    strengthText.textContent =
+                        "Password kuat";
+                } else {
+                    strengthText.textContent =
+                        "Password sangat kuat";
+                }
+            }
+        );
+
+
+        confirmPasswordInput.addEventListener(
+            "input",
+            function () {
+                if (
+                    confirmPasswordInput.value === ""
+                ) {
+                    passwordMatch.textContent = "";
+                    return;
+                }
+
+                if (
+                    confirmPasswordInput.value ===
+                    passwordInput.value
+                ) {
+                    passwordMatch.textContent =
+                        "Password cocok";
+                    passwordMatch.className =
+                        "password-match success";
+                } else {
+                    passwordMatch.textContent =
+                        "Password tidak cocok";
+                    passwordMatch.className =
+                        "password-match error";
+                }
+            }
+        );
+
+        registerForm.addEventListener(
+            "submit",
+            function (event) {
+                event.preventDefault();
+                if (
+                    passwordInput.value !==
+                    confirmPasswordInput.value
+                ) {
+                    passwordMatch.textContent =
+                        "Password tidak cocok";
+                    passwordMatch.className =
+                        "password-match error";
+                    return;
+                }
+                alert(
+                    "Registrasi berhasil! Silakan masuk menggunakan akun yang telah dibuat."
+                );
+                window.location.href =
+                    "login.html";
+            }
+        );
+    </script>
+</body>
+</html>
