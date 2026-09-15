@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak Masuk - Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">FITP</div>
+        <div class="brand-text">Universitas Islam Nusantara</div>
+      </div>
+      <div class="actions">
+        <button class="icon">🔔</button>
+        <div class="switch"><span class="dot"></span></div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="panel">
+        <h1 class="panel-title">Permohonan Masuk</h1>
+        <p class="panel-sub">Berikut Adalah Daftar Permohonan Yang Masuk.</p>
+
+        <div class="controls">
+          <div class="tabs">
+            <button class="tab active">
+              Semua <span class="count">15</span>
+            </button>
+            <button class="tab">Menunggu <span class="count">5</span></button>
+            <button class="tab">Diterima <span class="count">5</span></button>
+            <button class="tab">Ditolak <span class="count">5</span></button>
+          </div>
+
+          <div class="search-filter">
+            <input
+              type="search"
+              placeholder="Cari nama, NIM, atau Program Studi..."
+            />
+            <button class="filter">Filter ▾</button>
+          </div>
+        </div>
+
+        <div class="list">
+          <!-- request item -->
+          <article class="request">
+            <div class="meta">
+              <div class="avatar">F</div>
+              <div class="info">
+                <h3>Favian Dilan Tratama</h3>
+                <div class="small">
+                  41037006241051 · Teknik Informatika · MBKM001
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="doc">
+                <div>
+                  <strong>Pendaftaran</strong>
+                  <div class="small">MBKM</div>
+                </div>
+                <div class="small">
+                  Tanggal Pengajuan<br />15 Sep 2026, 10:25
+                </div>
+              </div>
+              <div class="actions-right">
+                <span class="badge waiting">Menunggu</span>
+                <div class="btns">
+                  <button class="btn view">Lihat Berkas</button>
+                  <button class="btn accept">Setujui</button>
+                  <button class="btn reject">Tolak</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- duplicate items for demo -->
+          <article class="request">
+            <div class="meta">
+              <div class="avatar">M</div>
+              <div class="info">
+                <h3>Muchamad Abdul Azis</h3>
+                <div class="small">
+                  41037006241086 · Teknik Informatika · TA001
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="doc">
+                <div>
+                  <strong>Permohonan</strong>
+                  <div class="small">Penelitian TA</div>
+                </div>
+                <div class="small">
+                  Tanggal Pengajuan<br />14 Sep 2026, 09:25
+                </div>
+              </div>
+              <div class="actions-right">
+                <span class="badge waiting">Menunggu</span>
+                <div class="btns">
+                  <button class="btn view">Lihat Berkas</button>
+                  <button class="btn accept">Setujui</button>
+                  <button class="btn reject">Tolak</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="request approved">
+            <div class="meta">
+              <div class="avatar">R</div>
+              <div class="info">
+                <h3>Rizal Hadi Nurhayat</h3>
+                <div class="small">
+                  41037006241062 · Teknik Informatika · SKP001
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="doc">
+                <div>
+                  <strong>Pendaftaran</strong>
+                  <div class="small">Seminar KP</div>
+                </div>
+                <div class="small">
+                  Tanggal Pengajuan<br />31 Agustus 2026, 10:25
+                </div>
+              </div>
+              <div class="actions-right">
+                <span class="badge approved">Disetujui</span>
+                <div class="btns">
+                  <button class="btn detail">Lihat Detail</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="request">
+            <div class="meta">
+              <div class="avatar">M</div>
+              <div class="info">
+                <h3>Muhammad Syahran Maulana</h3>
+                <div class="small">
+                  41037006241022 · Teknik Informatika · KP001
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="doc">
+                <div>
+                  <strong>Permohonan</strong>
+                  <div class="small">Kerja Praktek</div>
+                </div>
+                <div class="small">
+                  Tanggal Pengajuan<br />15 Sep 2026, 10:50
+                </div>
+              </div>
+              <div class="actions-right">
+                <span class="badge waiting">Menunggu</span>
+                <div class="btns">
+                  <button class="btn view">Lihat Berkas</button>
+                  <button class="btn accept">Setujui</button>
+                  <button class="btn reject">Tolak</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          Menampilkan 4 Dari 4 Permohonan
+          <div class="pills">
+            <button class="p active">1</button><button class="p">2</button
+            ><button class="p">3</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand-footer">Universitas Islam Nusantara</div>
+        <div class="contacts">
+          <div>fakultas@gmail.com</div>
+          <div>Jalan Soekarno-Hatta Nomor 530, Buahbatu, Bandung</div>
+          <div>(022) 2100098 · 081234566777</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

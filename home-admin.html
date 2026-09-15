@@ -1,77 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Navbar & Footer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard FTP - Admin</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Font Awesome CDN untuk Ikon -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="dasboardadmin.css" />
+  </head>
+  <body>
     <!-- NAVBAR -->
     <header class="navbar">
+      <div class="navbar-inner">
         <div class="navbar-brand">
-            <!-- Ganti src dengan path logo Anda -->
-            <img src="logo.png" alt="FTP UNINUS Logo">
+          <img src="logo.png" alt="FTP UNINUS Logo" />
         </div>
-        <div class="navbar-actions">
-            <div class="notification-icon">
-                <i class="fa-solid fa-bell"></i>
-            </div>
-            <div class="theme-toggle">
-                <div class="toggle-circle"></div>
-            </div>
-        </div>
-    </header>
 
+        <div class="navbar-actions">
+          <div class="notification-icon">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="theme-toggle">
+            <div class="toggle-circle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- TEMPAT UNTUK ANGGOTA TIM LAIN -->
     <main class="main-content">
-        <!-- ISIKAN KONTEN UTAMA DI SINI -->
-        <h2>[ Area Konten Utama ]</h2>
-        <p>Bagian ini siap diisi oleh pengembang lain.</p>
-    </main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Selamat Datang<br />di Website Internal FTP</h1>
 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse tincidunt, elit quis rhoncus feugiat, tortor quam
+              consectetur quam, nec vulputate erat tellus vitae ex.
+            </p>
+
+            <button class="cta">Panduan Pendaftaran</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDER SECTION -->
+      <section class="slider-section">
+        <div class="slider">
+          <button class="slide-btn left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="slide-image"></div>
+
+          <button class="slide-btn right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="slider-text">
+          <h2>Lorem ipsum<br />dolor sit amet</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            tincidunt elit quis rhoncus feugiat.
+          </p>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section class="menu-section">
+        <h2>Pemajuan Dan Permohonan Masuk</h2>
+
+        <div class="menu-grid">
+          <div class="menu-card">
+            <h4>Syarat Pengajuan<br />Pembuatan Ijazah</h4>
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Pendaftaran<br />MBKM</h4>
+            <i class="fa-solid fa-book"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Pendaftaran<br />Seminar KP</h4>
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Surat Keterangan<br />Aktif</h4>
+            <i class="fa-solid fa-file"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Permohonan<br />Penelitian TA</h4>
+            <i class="fa-solid fa-flask"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Surat Keterangan<br />Lulus</h4>
+            <i class="fa-solid fa-folder"></i>
+          </div>
+
+          <div class="menu-card">
+            <h4>Permohonan<br />Kerja Praktek</h4>
+            <i class="fa-solid fa-hard-drive"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLOATING BUTTON -->
+      <a href="#" class="wa-button">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <a href="#" class="top-button">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <!-- Sisi Kiri Footer -->
+      <div class="footer-inner">
         <div class="footer-left">
-            <div class="brand-title">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span>Universitas Islam Nusantara</span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+          <div class="brand-title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Universitas Islam Nusantara</span>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
 
-        <!-- Sisi Kanan Footer -->
         <div class="footer-right">
-            <div class="info-item">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:fakultas@gmail.com">fakultas@gmail.com</a>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Jalan Soekarno-Hatta Nomor 530,<br>Buahbatu, Bandung</span>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>(022) 2100098</span>
-            </div>
-            <div class="info-item">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>081234566777</span>
-            </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:fakultas@gmail.com">fakultas@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Jalan Soekarno-Hatta Nomor 530,<br />Buahbatu, Bandung</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(022) 2100098</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>081234566777</span>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
