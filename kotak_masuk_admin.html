@@ -3,34 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kontak Masuk - Admin</title>
+    <title>Kotak Masuk - Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="site-shell.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="brand">
-        <div class="logo">FITP</div>
-        <div class="brand-text">Universitas Islam Nusantara</div>
+    <header class="navbar">
+      <div class="navbar-brand">
+        <a href="home-admin.html"><img src="logo.jpeg" alt="FTP UNINUS Logo" /></a>
       </div>
-      <div class="actions">
-        <button class="icon">🔔</button>
-        <div class="switch"><span class="dot"></span></div>
+      <div class="navbar-actions">
+        <div class="notification-icon">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="theme-toggle">
+          <div class="toggle-circle"></div>
+        </div>
       </div>
     </header>
 
     <main class="wrap">
       <section class="panel">
         <h1 class="panel-title">Permohonan Masuk</h1>
-        <p class="panel-sub">Berikut Adalah Daftar Permohonan Yang Masuk.</p>
+        <p class="panel-sub">Berikut adalah daftar permohonan yang masuk.</p>
 
         <div class="controls">
           <div class="tabs">
-            <button class="tab active">
-              Semua <span class="count">15</span>
+            <button class="tab active" type="button" data-status="all">
+              Semua <span class="count">4</span>
             </button>
-            <button class="tab">Menunggu <span class="count">5</span></button>
-            <button class="tab">Diterima <span class="count">5</span></button>
-            <button class="tab">Ditolak <span class="count">5</span></button>
+            <button class="tab" type="button" data-status="waiting">Menunggu <span class="count">3</span></button>
+            <button class="tab" type="button" data-status="approved">Diterima <span class="count">1</span></button>
+            <button class="tab" type="button" data-status="rejected">Ditolak <span class="count">0</span></button>
           </div>
 
           <div class="search-filter">
@@ -38,12 +46,11 @@
               type="search"
               placeholder="Cari nama, NIM, atau Program Studi..."
             />
-            <button class="filter">Filter ▾</button>
+            <button class="filter" type="button">Filter ▾</button>
           </div>
         </div>
 
         <div class="list">
-          <!-- request item -->
           <article class="request">
             <div class="meta">
               <div class="avatar">F</div>
@@ -67,15 +74,14 @@
               <div class="actions-right">
                 <span class="badge waiting">Menunggu</span>
                 <div class="btns">
-                  <button class="btn view">Lihat Berkas</button>
-                  <button class="btn accept">Setujui</button>
-                  <button class="btn reject">Tolak</button>
+                  <button class="btn view" type="button">Lihat Berkas</button>
+                  <button class="btn accept" type="button">Setujui</button>
+                  <button class="btn reject" type="button">Tolak</button>
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- duplicate items for demo -->
           <article class="request">
             <div class="meta">
               <div class="avatar">M</div>
@@ -99,9 +105,9 @@
               <div class="actions-right">
                 <span class="badge waiting">Menunggu</span>
                 <div class="btns">
-                  <button class="btn view">Lihat Berkas</button>
-                  <button class="btn accept">Setujui</button>
-                  <button class="btn reject">Tolak</button>
+                  <button class="btn view" type="button">Lihat Berkas</button>
+                  <button class="btn accept" type="button">Setujui</button>
+                  <button class="btn reject" type="button">Tolak</button>
                 </div>
               </div>
             </div>
@@ -130,7 +136,7 @@
               <div class="actions-right">
                 <span class="badge approved">Disetujui</span>
                 <div class="btns">
-                  <button class="btn detail">Lihat Detail</button>
+                  <button class="btn detail" type="button">Lihat Detail</button>
                 </div>
               </div>
             </div>
@@ -150,7 +156,7 @@
               <div class="doc">
                 <div>
                   <strong>Permohonan</strong>
-                  <div class="small">Kerja Praktek</div>
+                  <div class="small">Kerja Praktik</div>
                 </div>
                 <div class="small">
                   Tanggal Pengajuan<br />15 Sep 2026, 10:50
@@ -159,9 +165,9 @@
               <div class="actions-right">
                 <span class="badge waiting">Menunggu</span>
                 <div class="btns">
-                  <button class="btn view">Lihat Berkas</button>
-                  <button class="btn accept">Setujui</button>
-                  <button class="btn reject">Tolak</button>
+                  <button class="btn view" type="button">Lihat Berkas</button>
+                  <button class="btn accept" type="button">Setujui</button>
+                  <button class="btn reject" type="button">Tolak</button>
                 </div>
               </div>
             </div>
@@ -171,22 +177,46 @@
         <div class="pagination">
           Menampilkan 4 Dari 4 Permohonan
           <div class="pills">
-            <button class="p active">1</button><button class="p">2</button
-            ><button class="p">3</button>
+            <button class="p active" type="button">1</button><button class="p" type="button">2</button
+            ><button class="p" type="button">3</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="brand-footer">Universitas Islam Nusantara</div>
-        <div class="contacts">
-          <div>fakultas@gmail.com</div>
-          <div>Jalan Soekarno-Hatta Nomor 530, Buahbatu, Bandung</div>
-          <div>(022) 2100098 · 081234566777</div>
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="brand-title">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Universitas Islam Nusantara</span>
+        </div>
+        <div class="social-icons">
+          <span class="social-link" aria-label="Instagram belum tersedia"><i class="fa-brands fa-instagram"></i></span>
+          <span class="social-link" aria-label="TikTok belum tersedia"><i class="fa-brands fa-tiktok"></i></span>
+          <span class="social-link" aria-label="Facebook belum tersedia"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="social-link" aria-label="YouTube belum tersedia"><i class="fa-brands fa-youtube"></i></span>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:fakultas@gmail.com">fakultas@gmail.com</a>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Jalan Soekarno-Hatta Nomor 530,<br />Buahbatu, Bandung</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(022) 2100098</span>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>081234566777</span>
         </div>
       </div>
     </footer>
+    <script src="site.js"></script>
+    <script src="admin-inbox.js"></script>
   </body>
 </html>

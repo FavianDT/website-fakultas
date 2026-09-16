@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary: #1f7a5c;
-    --primary-dark: #155b44;
-    --primary-light: #e8f5ef;
+    --primary: #2b783c;
+    --primary-dark: #236832;
+    --primary-light: #eaf4ec;
     --text-dark: #1d2a25;
     --text: #52615b;
     --text-light: #89958f;
@@ -17,13 +17,12 @@
     --success: #2e8b68;
     --error: #d95757;
     --shadow: 0 25px 70px rgba(25, 61, 47, 0.13);
-    --radius: 18px;
+    --radius: 15px;
 }
 
 body {
     min-height: 100vh;
     font-family:
-        "Segoe UI",
         Arial,
         sans-serif;
     color: var(--text-dark);
@@ -85,9 +84,9 @@ body {
     background:
         linear-gradient(
             145deg,
-            #1f7a5c 0%,
-            #19684f 55%,
-            #155b44 100%
+            #2b783c 0%,
+            #286f38 55%,
+            #236832 100%
         );
 }
 
@@ -444,6 +443,11 @@ body {
     color: var(--primary);
     font-weight: 600;
     text-decoration: none;
+}
+
+.terms-placeholder {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 .terms-text a:hover {

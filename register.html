@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Daftar - Sistem Informasi</title>
+    <title>Daftar Akun - FTP UNINUS</title>
 
     <link rel="stylesheet" href="styleregister.css">
 </head>
@@ -16,14 +16,13 @@
         <section class="register-container">
             <div class="register-card">
 
-                <!-- Bagian Informasi -->
                 <div class="register-info">
                     <div class="info-content">
-                        <a href="login.html" class="back-login">
+                        <a href="index.html" class="back-login">
                             ← Kembali ke Login
                         </a>
                         <div class="info-logo">
-                            <img src="logo.png" alt="Logo">
+                            <img src="logo.jpeg" alt="Logo">
                         </div>
                         <h1>Mulai Bersama Kami</h1>
                         <p>
@@ -51,7 +50,6 @@
                 </div>
 
 
-                <!-- Bagian Form -->
                 <div class="register-form-section">
                     <div class="register-form-header">
                         <span class="form-badge">
@@ -205,9 +203,9 @@
                                 <span class="custom-checkbox"></span>
                                 <span class="terms-text">
                                     Saya menyetujui
-                                    <a href="#">
+                                    <span class="terms-placeholder">
                                         syarat dan ketentuan
-                                    </a>
+                                    </span>
                                     yang berlaku.
                                 </span>
 
@@ -226,7 +224,7 @@
 
                     <div class="login-link">
                         <span>Sudah memiliki akun?</span>
-                        <a href="login.html">
+                        <a href="index.html">
                             Sign In
                         </a>
                     </div>
@@ -371,11 +369,29 @@
                         "password-match error";
                     return;
                 }
+
+                const registeredUsers =
+                    JSON.parse(localStorage.getItem("registeredUsers") || "[]");
+                const username = document.getElementById("username").value.trim();
+
+                if (registeredUsers.some(user => user.username === username)) {
+                    alert("Username sudah digunakan.");
+                    return;
+                }
+
+                registeredUsers.push({
+                    firstName: document.getElementById("firstName").value.trim(),
+                    lastName: document.getElementById("lastName").value.trim(),
+                    username,
+                    email: document.getElementById("email").value.trim(),
+                    password: passwordInput.value
+                });
+                localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
                 alert(
                     "Registrasi berhasil! Silakan masuk menggunakan akun yang telah dibuat."
                 );
                 window.location.href =
-                    "login.html";
+                    "index.html";
             }
         );
     </script>

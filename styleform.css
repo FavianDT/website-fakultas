@@ -27,7 +27,6 @@
     border-radius: 0 0 20px 20px;
 }
 
-/* ============ CARD =============*/
 .form-card {
     width: 100%;
     min-height: 150px;
@@ -45,7 +44,6 @@
     margin-bottom: 12px;
 }
 
-/* ============ INPUT =============*/
 .form-card input,
 .form-card select {
     width: 100%;
@@ -69,7 +67,6 @@
     cursor: pointer;
 }
 
-/* ================= ALAMAT & KEPERLUAN ================= */
 .form-group.large {
     min-height: 125px;
 }
@@ -79,7 +76,6 @@
     margin-bottom: 3px;
 }
 
-/* ================= SUBMIT FORM ================= */
 .submit {
     margin-top: 20px;
     text-align: center;

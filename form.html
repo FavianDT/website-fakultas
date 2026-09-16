@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Navbar & Footer</title>
+    <title>Permohonan Keterangan Aktif - FTP UNINUS</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Font Awesome CDN untuk Ikon -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleform.css">
+    <link rel="stylesheet" href="site-shell.css">
 
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar-brand">
-            <!-- Ganti src dengan path logo Anda -->
-            <img src="logo.jpeg" alt="FTP UNINUS Logo">
+             <a href="home.html"><img src="logo.jpeg" alt="FTP UNINUS Logo"></a>
         </div>
         <div class="navbar-actions">
             <div class="notification-icon">
@@ -30,39 +28,42 @@
     </header>
 
 
-    <!-- TEMPAT UNTUK ANGGOTA TIM LAIN -->
     <main class="main-content">
+        <form id="applicationForm" novalidate>
         <div class="form-wrapper">
 
             <div class="title">
-                Permohonan Keterangan Aktif FTP Uninus
+                Permohonan dan Pengajuan FTP UNINUS
             </div>
 
             <div class="form">
 
-                <!-- NAMA -->
                 <div class="form-card">
-                    <label>Nama Mahasiswa</label>
+                    <label for="studentName">Nama Mahasiswa</label>
 
                     <input 
+                        id="studentName"
+                        name="studentName"
                         type="text"
+                        required
                         placeholder="Ketik Nama Lengkap">
                 </div>
 
-                <!-- NIM -->
                 <div class="form-card">
-                    <label>Nomor Induk Mahasiswa</label>
+                    <label for="studentId">Nomor Induk Mahasiswa</label>
 
                     <input
+                        id="studentId"
+                        name="studentId"
                         type="text"
+                        required
                         placeholder="Ketik NIM"> 
                 </div>
 
-                <!-- PRODI -->
                 <div class="form-card">
-                    <label>Program Studi</label>
+                    <label for="studyProgram">Program Studi</label>
 
-                    <select>
+                    <select id="studyProgram" name="studyProgram" required>
                         <option value="">
                             Pilih Prodi
                         </option>
@@ -81,11 +82,10 @@
                     </select>
                 </div>
 
-                <!-- SEMESTER -->
                 <div class="form-card">
-                    <label>Semester</label>
+                    <label for="semester">Semester</label>
 
-                    <select>
+                    <select id="semester" name="semester" required>
                         <option value="">
                             Pilih Semester
                         </option>
@@ -116,39 +116,47 @@
                     </select>
                 </div>
 
-                <!-- TTL -->
                 <div class="form-card">
-                    <label>Tempat, Tanggal Lahir</label>
+                    <label for="birthDetails">Tempat, Tanggal Lahir</label>
 
                     <input 
+                        id="birthDetails"
+                        name="birthDetails"
                         type="text"
+                        required
                         placeholder="Contoh: Tangerang, 4 Maret 2001">
                 </div>
 
-                <!-- ALAMAT -->
                 <div class="form-card">
-                    <label>Alamat Lengkap</label>
+                    <label for="address">Alamat Lengkap</label>
 
                     <input
+                        id="address"
+                        name="address"
                         type="text"
+                        required
                         placeholder="Ketik Alamat">
                 </div>
 
-                <!-- NOMOR HP -->
                 <div class="form-card">
-                    <label>Nomor HP</label>
+                    <label for="phone">Nomor HP</label>
 
                     <input
-                        type="text"
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        required
                         placeholder="Ketik Nomor HP">
                 </div>
 
-                <!-- KEPERLUAN SURAT -->
                 <div class="form-card">
-                    <label>Keperluan SUrat</label>
+                    <label for="purpose">Keperluan Surat</label>
 
                     <input
+                        id="purpose"
+                        name="purpose"
                         type="text"
+                        required
                         placeholder="Contoh: Untuk magang PMMB BUMN batch 1 2021, Diminta kantor orang tua, dll">
                 </div>
             </div>
@@ -157,26 +165,24 @@
         <div class="submit">
             <button class="btn btn-primary" type="submit">SUBMIT FORM</button>
         </div>
+        </form>
     </main>
 
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <!-- Sisi Kiri Footer -->
         <div class="footer-left">
             <div class="brand-title">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <span>Universitas Islam Nusantara</span>
             </div>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <span class="social-link" aria-label="Instagram belum tersedia"><i class="fa-brands fa-instagram"></i></span>
+                <span class="social-link" aria-label="TikTok belum tersedia"><i class="fa-brands fa-tiktok"></i></span>
+                <span class="social-link" aria-label="Facebook belum tersedia"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="social-link" aria-label="YouTube belum tersedia"><i class="fa-brands fa-youtube"></i></span>
             </div>
         </div>
 
-        <!-- Sisi Kanan Footer -->
         <div class="footer-right">
             <div class="info-item">
                 <i class="fa-solid fa-envelope"></i>
@@ -196,5 +202,7 @@
             </div>
         </div>
     </footer>
+    <script src="site.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

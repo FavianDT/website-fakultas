@@ -1,5 +1,5 @@
 :root {
-  --green: #3f7a3f;
+  --green: #2b783c;
   --dark-green: #2f6b2f;
   --blue: #2b7be9;
   --muted: #9aa6ab;
@@ -10,11 +10,7 @@
 }
 body {
   margin: 0;
-  font-family:
-    Inter,
-    Segoe UI,
-    Arial,
-    sans-serif;
+  font-family: Arial, sans-serif;
   background: #e9e9ea;
   color: #222;
 }
@@ -78,14 +74,14 @@ body {
   width: 100%;
   max-width: 1100px;
   background: #fff;
-  border-radius: 26px;
+  border-radius: 15px;
   padding: 28px;
   border: 6px solid transparent;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
   position: relative;
 }
 .panel {
-  outline: 6px solid #bfe0ff; /* light blue outer */
+  outline: 6px solid #bfe0ff;
 }
 .panel-title {
   margin: 0;
@@ -168,7 +164,7 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #3f7a3f;
+  background: #2b783c;
   color: #fff;
   display: flex;
   align-items: center;
@@ -214,6 +210,11 @@ body {
   background: #e6f7ea;
   color: var(--green);
   border: 1px solid #cfead0;
+}
+.badge.rejected {
+  background: #fde8e7;
+  color: #a33a36;
+  border: 1px solid #f3c9c7;
 }
 .btns {
   display: flex;
@@ -297,11 +298,26 @@ body {
     align-items: stretch;
     gap: 12px;
   }
+  .tabs {
+    flex-wrap: wrap;
+  }
   .panel {
     padding: 18px;
   }
+  .search-filter {
+    flex-wrap: wrap;
+  }
   .search-filter input {
     width: 100%;
+    min-width: 0;
+    flex: 1 1 220px;
+  }
+  .request {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .request .meta {
+    flex: 0 0 auto;
   }
   .details {
     flex-direction: column;

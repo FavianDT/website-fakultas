@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Navbar & Footer</title>
+    <title>Website Internal FTP UNINUS</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Font Awesome CDN untuk Ikon -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="dashboardadmin.css">
+    <link rel="stylesheet" href="site-shell.css">
 
 
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar-brand">
-            <!-- Ganti src dengan path logo Anda -->
-            <img src="logo.jpeg" alt="FTP UNINUS Logo">
+            <a href="home.html"><img src="logo.jpeg" alt="FTP UNINUS Logo"></a>
         </div>
         <div class="navbar-actions">
             <div class="notification-icon">
@@ -31,127 +28,96 @@
     </header>
 
 
-    <!-- TEMPAT UNTUK ANGGOTA TIM LAIN -->
     <main class="main-content">
-         <!-- HERO SECTION -->
-    <section class="hero" style="background-image: url('latar.jpeg');">
-       <div class="hero-overlay" >
-        <div class="hero-content">
-            <h1>Selamat Datang<br>di Website Internal FTP</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Suspendisse tincidunt.
-        </p>
-
-        <button>Panduan Perkuliahan</button>
-    </div>
-</div>
-    </section>
-
-    <!-- SLIDER SECTION -->
-    <section class="slider-section">
-
-        <div class="slider">
-            <button class="slide-btn left">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <div class="slide-image"></div>
-
-            <button class="slide-btn right">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-        </div>
-
-        <div class="slider-text">
-            <h2>Lorem ipsum<br>dolor sit amet</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-                Suspendisse tincidunt elit quis
-                rhoncus feugiat.
-            </p>
-        </div>
-
-    </section>
-
-    <!-- MENU -->
-    <section class="menu-section">
-
-        <h2>Pengajuan Dan Permohonan</h2>
-
-        <div class="menu-grid">
-
-            <div class="menu-card">
-                <h4>Syarat Pengajuan<br>Pembuatan Ijazah</h4>
-                <i class="fa-solid fa-file-lines"></i>
+        <section class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Selamat Datang<br>di Website Internal Fakultas Teknik dan Pertanian (FTP)</h1>
+                    <p>
+                        Akses layanan akademik dan administrasi fakultas
+                        dengan mudah, cepat, dan terarah.
+                    </p>
+                    <a class="cta" href="panduan-layanan.html">Panduan Layanan</a>
+                </div>
             </div>
+        </section>
 
-            <div class="menu-card">
-                <h4>Pendaftaran<br>MBKM</h4>
-                <i class="fa-solid fa-book"></i>
+        <section class="slider-section">
+            <div class="slider">
+                <button class="slide-btn left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="slide-image"></div>
+                <button class="slide-btn right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-
-            <div class="menu-card">
-                <h4>Pendaftaran<br>Seminar KP</h4>
-                <i class="fa-solid fa-users"></i>
+            <div class="slider-text">
+                <h2>Layanan Akademik<br>Terintegrasi</h2>
+                <p>
+                    Temukan berbagai informasi dan layanan untuk mendukung
+                    kegiatan akademik mahasiswa.
+                </p>
             </div>
+        </section>
 
-            <div class="menu-card">
-                <h4>Surat Keterangan<br>Aktif</h4>
-                <i class="fa-solid fa-file"></i>
+        <section class="menu-section">
+            <h2>Pengajuan dan Permohonan</h2>
+            <div class="menu-grid">
+                <a class="menu-card" href="syarat-ijazah.html">
+                    <h4>Syarat Pengajuan<br>Pembuatan Ijazah</h4>
+                    <i class="fa-solid fa-file-lines"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Pendaftaran<br>MBKM</h4>
+                    <i class="fa-solid fa-book"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Pendaftaran<br>Seminar KP</h4>
+                    <i class="fa-solid fa-users"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Surat Keterangan<br>Aktif</h4>
+                    <i class="fa-solid fa-file"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Permohonan<br>Penelitian TA</h4>
+                    <i class="fa-solid fa-flask"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Surat Keterangan<br>Lulus</h4>
+                    <i class="fa-solid fa-folder"></i>
+                </a>
+                <a class="menu-card" href="form.html">
+                    <h4>Permohonan<br>Praktik</h4>
+                    <i class="fa-solid fa-laptop"></i>
+                </a>
             </div>
+        </section>
 
-            <div class="menu-card">
-                <h4>Permohonan<br>Penelitian TA</h4>
-                <i class="fa-solid fa-flask"></i>
-            </div>
-
-            <div class="menu-card">
-                <h4>Surat Keterangan<br>Lulus</h4>
-                <i class="fa-solid fa-folder"></i>
-            </div>
-
-            <div class="menu-card">
-                <h4>Permohonan<br>Praktek</h4>
-                <i class="fa-solid fa-laptop"></i>
-            </div>
-
-        </div>
-    
-
-    </section>
-
-    <!-- FLOATING BUTTON -->
-    <a href="#" class="wa-button">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <a href="#" class="top-button">
-        <i class="fa-solid fa-chevron-up"></i>
-    </a>
+        <a href="#" class="wa-button">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="#" class="top-button">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
     </main>
 
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <!-- Sisi Kiri Footer -->
         <div class="footer-left">
             <div class="brand-title">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <span>Universitas Islam Nusantara</span>
             </div>
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <span class="social-link" aria-label="Instagram belum tersedia"><i class="fa-brands fa-instagram"></i></span>
+                <span class="social-link" aria-label="TikTok belum tersedia"><i class="fa-brands fa-tiktok"></i></span>
+                <span class="social-link" aria-label="Facebook belum tersedia"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="social-link" aria-label="YouTube belum tersedia"><i class="fa-brands fa-youtube"></i></span>
             </div>
         </div>
 
-        <!-- Sisi Kanan Footer -->
         <div class="footer-right">
             <div class="info-item">
                 <i class="fa-solid fa-envelope"></i>
@@ -171,5 +137,6 @@
             </div>
         </div>
     </footer>
+    <script src="site.js"></script>
 </body>
 </html>
